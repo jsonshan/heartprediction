@@ -2,8 +2,10 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import joblib
+import pickle
 
 model = joblib.load('classifier.joblib')
+
 #[Age,Sex,ChestPainType,
 #Cholesterol,FastingBS,MaxHR,ExeriseAngina,Oldpeak,ST_Slope]
 st.title('Heart Disease Prediction Form')
